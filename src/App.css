@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
 .App {
   text-align: center;
 }
@@ -19,4 +21,138 @@
 
 .App-link {
   color: #09d3ac;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: flex-end;
+
+  height: 30px;
+  padding: 10px 20px;
+}
+
+.toolbar__item {
+
+  cursor: pointer;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  width: 80%;
+  margin: auto;
+}
+
+.card {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+
+  position: relative;
+
+  width: 30%;
+  margin-bottom: 25px;
+}
+
+.card__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: absolute;
+  top: 15px;
+}
+
+.card__title,
+.card__color {
+  margin: 0;
+}
+
+.card__title {
+  text-transform: uppercase;
+}
+
+.card__color {
+  color: gray;
+  font-size: 12px;
+  text-transform: lowercase;
+}
+
+.card__img {
+  width: 100%;
+}
+
+.card__footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+  position: absolute;
+  bottom: 10px;
+
+  width: 80%;
+}
+
+.card__price,
+.card__btn {
+  color: red;
+}
+
+.card__btn {
+  padding: 5px;
+  background: transparent;
+  border: 1px solid red;
+  border-radius: 10px;
+
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.item {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  
+  height: 70px;
+
+  margin-bottom: 5px;
+  padding: 0 10px;
+
+  background-color: #F5F5F5;
+
+  overflow: hidden;
+}
+
+.item__title {
+  text-transform: uppercase;
+}
+
+.item__color {
+  color: gray;
+  font-size: 12px;
+  text-transform: lowercase;
+}
+
+.item__img {
+  width: 100px;
+}
+
+.item__price,
+.item__btn {
+  color: red;
+}
+
+.item__btn {
+  padding: 5px;
+  background: transparent;
+  border: 1px solid red;
+  border-radius: 10px;
+
+  text-transform: uppercase;
+  cursor: pointer;
 }
